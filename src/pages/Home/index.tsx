@@ -7,19 +7,19 @@ const movies = [
         title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. ',
 
-        backgroundImage: '../../../public/assets/19.png',
+        backgroundImage: '/assets/19.png',
         category: 'Filmes' // Adicione a categoria do filme
     },
     {
         title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. ',
-        backgroundImage: '../../../public/assets/11.png',
+        backgroundImage: '/assets/11.png',
         category: 'Animes' // Adicione a categoria do filme
     },
     {
         title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. ',
-        backgroundImage: '../../../public/assets/03.png',
+        backgroundImage: '/assets/03.png',
         category: 'Jogos' // Adicione a categoria do filme
     },
     // Adicione mais filmes conforme necessário
@@ -27,19 +27,19 @@ const movies = [
 
 const destaques = [
     {
-        Img: "../../../public/assets/21.png",
+        Img: "/assets/21.png",
         category: "Animes",
         title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.",
     },
     {
-        Img: "../../../public/assets/17.png",
+        Img: "/assets/17.png",
         category: "Animes",
         title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.",
     },
     {
-        Img: "../../../public/assets/08.png",
+        Img: "/assets/08.png",
         category: "Animes",
         title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.",
