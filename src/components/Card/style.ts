@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-// interface CardContainerProps {
-//     backgroundImage: string; // a URL da imagem
-// }
-
 export const Content = styled.div`
     > a {
         text-decoration: none !important;
@@ -29,10 +25,10 @@ export const Content = styled.div`
                 
                 > h2 {
                     font-size: 2.4rem;
-                    font-weight: 400;
+                    font-weight: 200;
                     line-height: 140%;
                     color: ${props => props.theme.WHITE};
-                    margin-top: 24px;
+                    /* margin-top: 24px; */
                 }
             
                 > p {

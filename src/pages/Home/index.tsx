@@ -1,12 +1,13 @@
 import { Card } from "../../components/Card";
-import { Content, Header, Section } from "./styles";
+import { Cardes } from "../../components/Cardes";
+import { Content, Header, Section, SectionCard } from "./styles";
 
 const movies = [
     {
         title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. ',
 
-        backgroundImage: '../../assets/19.png',
+        backgroundImage: '/public/assets/19.png',
         category: 'Filmes' // Adicione a categoria do filme
     },
     {
@@ -23,6 +24,27 @@ const movies = [
     },
     // Adicione mais filmes conforme necessário
 ];
+
+const destaques = [
+    {
+        Img: "/public/assets/21.png",
+        category: "Animes",
+        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.",
+    },
+    {
+        Img: "/public/assets/17.png",
+        category: "Animes",
+        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.",
+    },
+    {
+        Img: "/public/assets/08.png",
+        category: "Animes",
+        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.",
+    },
+]
 
 export function Home() {
     return (
@@ -42,6 +64,20 @@ export function Home() {
 
                 ))}
             </Section>
+
+            <SectionCard>
+                <h2>Notícias mais recentes</h2>
+
+                <div>
+                    {destaques.map( (destaque, index) => (
+                        <Cardes key={index} destaque={destaque}/>
+                    ))}
+                    {/* <Cardes />
+                    <Cardes />
+                    <Cardes /> */}
+                </div>
+
+            </SectionCard>
         </Content>
     )
 }
