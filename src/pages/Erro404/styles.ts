@@ -13,7 +13,7 @@ export const Section = styled.section`
     @media screen and (max-width: 835px) {
             justify-content: center;
             text-align: center;
-            margin-top: 200px;
+            margin-top: 100px;
     }
 `
 

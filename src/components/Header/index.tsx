@@ -1,4 +1,4 @@
-import logoImg from '../../assets/Logo_naped.png';
+import logoImg from '/assets/Logo_naped.png';
 
 import { ButtonText } from '../ButtonText';
 import { Link } from '../Link';
