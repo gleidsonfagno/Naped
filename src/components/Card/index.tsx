@@ -1,4 +1,4 @@
-import { ButtonText } from "../ButtonText";
+import { Category } from "../Category";
 import { Content } from "./style";
 
 interface Movie {
@@ -19,7 +19,7 @@ export function Card({ movie }: CardProps) {
                 <article>
                     <img src={movie.backgroundImage} alt="" />
                     <div>
-                        <span><ButtonText title={movie.category} /></span>
+                        <span><Category title={movie.category} /></span>
                         <h2> {movie.title} </h2>
                         {/* <p>  {movie.description} </p> */}
                     </div>

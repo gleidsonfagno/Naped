@@ -1,6 +1,9 @@
+
 import { Card } from "../../components/Card";
 import { Cardes } from "../../components/Cardes";
-import { Content, Header, Section, SectionCard } from "./styles";
+import { Category } from "../../components/Category";
+import { Footer } from "../../components/Footer";
+import { Content, Header, Section, SectionCard, Sectionlanc, Container } from "./styles";
 
 const movies = [
     {
@@ -48,6 +51,7 @@ const destaques = [
 
 export function Home() {
     return (
+        <>
         <Content>
             <Header>
                 <h1>
@@ -69,8 +73,8 @@ export function Home() {
                 <h2>Notícias mais recentes</h2>
 
                 <div>
-                    {destaques.map( (destaque, index) => (
-                        <Cardes key={index} destaque={destaque}/>
+                    {destaques.map((destaque, index) => (
+                        <Cardes key={index} destaque={destaque} />
                     ))}
                     {/* <Cardes />
                     <Cardes />
@@ -78,6 +82,35 @@ export function Home() {
                 </div>
 
             </SectionCard>
+
+            <Sectionlanc>
+                <h2>
+                    Lançamentos
+                </h2>
+                <Container>
+                    <div>
+                        <Category title="Filmes" />
+
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque hic labore assumenda quia iste quos corrupti harum quis.</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda totam doloribus magni eligendi, vero voluptas possimus neque!!</p>
+
+                        <a href="">Ler mais</a>
+                    </div>
+
+                    <div>
+                        <Category title="Filmes" />
+
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque hic labore assumenda quia iste quos corrupti harum quis.</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda totam doloribus magni eligendi, vero voluptas possimus neque!!</p>
+
+                        <a href="">Ler mais</a>
+                    </div>
+                </Container>
+            </Sectionlanc>
         </Content>
+        <Footer/>
+        </>
     )
 }

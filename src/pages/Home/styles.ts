@@ -30,7 +30,7 @@ export const Section = styled.section`
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin: 0px auto 5rem;
-    
+
     > div:nth-child(1) {
     grid-row: 1 / 3;
     }
@@ -58,6 +58,54 @@ export const SectionCard = styled.section`
         > div {
             grid-template-columns: 1fr; 
             grid-auto-rows: auto; 
+        }
+    }
+`
+
+export const Sectionlanc = styled.section`
+    > h2 {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 48px;
+    }
+`
+
+export const Container = styled.section`
+    display: flex;
+    gap: 24px;
+    margin-bottom: 140px;
+
+    > div {
+        max-width: 592px;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 24px;
+            line-height: 140%;
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            color: ${props => props.theme.DARCK_20};
+            margin-bottom: 32px;
+        }
+
+        a {
+            color: ${props => props.theme.BUTTOM};
+            font-size: 18px;
+            line-height: 140%;
+            margin-top: 48px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        
+        > div {
+            max-width: 100%;
         }
     }
 `
