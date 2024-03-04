@@ -5,7 +5,7 @@ export function Footer() {
     return (
         <Content>
             <div>
-                <p>Copyright © 2022 iuricode.com. Todos os direitos reservados.</p>
+                <p>Copyright © 2023 <a href="https://gleidsonfagno.github.io/DevLinks/" target="_blank" rel="noopener noreferrer">gleidsonfagno</a> Todos os direitos reservados.</p>
 
                 <span>
                     Powered by

@@ -2,7 +2,6 @@
 import { Card } from "../../components/Card";
 import { Cardes } from "../../components/Cardes";
 import { Category } from "../../components/Category";
-import { Footer } from "../../components/Footer";
 import { Content, Header, Section, SectionCard, Sectionlanc, Container } from "./styles";
 
 const movies = [
@@ -110,7 +109,6 @@ export function Home() {
                 </Container>
             </Sectionlanc>
         </Content>
-        <Footer/>
         </>
     )
 }
