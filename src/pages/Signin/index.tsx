@@ -1,4 +1,4 @@
-import { FiUser, FiAtSign, FiLock } from "react-icons/fi";
+import { FiUser, FiLock } from "react-icons/fi";
 
 import { Input } from "../../components/Input";
 import { Form, Content } from "./styles";
@@ -6,7 +6,7 @@ import { ButtonText } from "../../components/ButtonText";
 
 
 
-export function Sigin() {
+export function Signin() {
     return (
         <Content>
 
@@ -14,7 +14,7 @@ export function Sigin() {
                 NAPED
             </h2>
 
-            <h3> Faça uma conta</h3>
+            <h3>Entrar na conta</h3>
 
             <Form>
                 <Input
@@ -24,18 +24,7 @@ export function Sigin() {
                 />
 
                 <Input
-                    placeholder="Digite seu e-mail"
-                    type="text"
-                    icon={FiAtSign}
-                />
-                <Input
-                    placeholder="Digite uma senha"
-                    type="password"
-                    icon={FiLock}
-                />
-
-                <Input
-                    placeholder="Digite novamente a senha"
+                    placeholder="Digite sua senha"
                     type="password"
                     icon={FiLock}
                 />
@@ -43,7 +32,7 @@ export function Sigin() {
                 <ButtonText title="Criar conta" />
             </Form>
 
-            <a href="">Já tenho uma conta</a>
+            <a href="">Criar uma conta</a>
         </Content>
     );
 }

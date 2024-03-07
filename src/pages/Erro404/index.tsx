@@ -1,4 +1,4 @@
-import eRRor404 from '../../assets/404.svg';
+import eRRor404 from '/assets/404.svg';
 
 import { ButtonText } from "../../components/ButtonText";
 import { Section, Left, Right } from "./styles";
