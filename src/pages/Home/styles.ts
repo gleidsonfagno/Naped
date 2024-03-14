@@ -6,7 +6,7 @@ export const Content = styled.main`
     padding: 0 16px;
 `
 
-export const Header = styled.section`
+export const Cabecalho = styled.section`
     margin-top: 140px;
     text-align: center;
     margin-bottom: 81px;

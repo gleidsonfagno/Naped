@@ -2,10 +2,13 @@ import eRRor404 from '/assets/404.svg';
 
 import { ButtonText } from "../../components/ButtonText";
 import { Section, Left, Right } from "./styles";
+import { Header } from '../../components/Header';
 
 
 export function Erro404() {
     return (
+       <>
+        <Header/>
         <Section>
             <Left>
                 <h2>Tenho más notícias
@@ -14,7 +17,7 @@ export function Erro404() {
                 <p>A página que você está procurando pode ter sido removida ou está temporariamente indisponível.</p>
 
                 <div>
-                <ButtonText title="Voltar para o início" />
+                <ButtonText title="Voltar para o início" to="/"/>
                 </div>
             </Left>
 
@@ -24,5 +27,6 @@ export function Erro404() {
                     volte para o mundo nerd!</p>
             </Right>
         </Section>
+       </>
     )
 }

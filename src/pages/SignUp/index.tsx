@@ -40,10 +40,10 @@ export function SignUp() {
                     icon={FiLock}
                 />
 
-                <ButtonText title="Criar conta" />
+                <ButtonText title="Criar conta" to="/login"/>
             </Form>
 
-            <a href="">Já tenho uma conta</a>
+            <a href="/login">Já tenho uma conta</a>
         </Content>
     );
 }

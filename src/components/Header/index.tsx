@@ -18,13 +18,13 @@ export function Header( ) {
 
                 <Nav>
                     <ul>
-                        <li><Link isActive href="#">Inicio</Link></li>
+                        <li><Link isActive href="/">Inicio</Link></li>
                         <li><Link href="#">Séries</Link></li>
                         <li><Link href="#">Filmes</Link></li>
                         <li><Link href="#">Animes</Link></li>
                         <li><Link href="#">Jogos</Link></li>
                     </ul>
-                <ButtonText title="Minha conta" />
+                <ButtonText title="Minha conta" to="/register" />
                 </Nav>
 
 

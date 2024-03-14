@@ -29,10 +29,10 @@ export function Signin() {
                     icon={FiLock}
                 />
 
-                <ButtonText title="Criar conta" />
+                <ButtonText title="Criar conta" to="/register" />
             </Form>
 
-            <a href="">Criar uma conta</a>
+            <a href="/register">Criar uma conta</a>
         </Content>
     );
 }

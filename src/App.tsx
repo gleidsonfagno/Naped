@@ -1,9 +1,7 @@
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   // Link
-// } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+
+
 
 
 // // import { Header } from './components/Header';
@@ -16,14 +14,15 @@
 // export function App() {
 //   return (
 //     <Router>
-//        <Switch>
-//       <Route path="/">
-//         <Erro404 />
-//       </Route>
-//       <Route path="/">
-//         <Home />
-//       </Route>
-//     </Switch>
+//       <Switch>
+//         <Route  path="/">
+//           <Home />
+//         </Route>
+//         <Route path="*">
+//           <Erro404 />
+//         </Route>
+//       </Switch >
+
 //     </Router>
 //   );
 // }

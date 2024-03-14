@@ -2,7 +2,8 @@
 import { Card } from "../../components/Card";
 import { Cardes } from "../../components/Cardes";
 import { Category } from "../../components/Category";
-import { Content, Header, Section, SectionCard, Sectionlanc, Container } from "./styles";
+import { Header } from "../../components/Header";
+import { Content, Cabecalho, Section, SectionCard, Sectionlanc, Container } from "./styles";
 
 const movies = [
     {
@@ -51,13 +52,14 @@ const destaques = [
 export function Home() {
     return (
         <>
+        <Header/>
         <Content>
-            <Header>
+            <Cabecalho>
                 <h1>
                     Mundo nerd? <br /> Naped!
                 </h1>
                 <p>O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos relacionados.</p>
-            </Header>
+            </Cabecalho>
 
             <Section>
                 {movies.map((movie, index) => (
