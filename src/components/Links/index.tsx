@@ -1,4 +1,20 @@
-import { StyledLink } from "./styles";
+// import { StyledLink } from "./styles";
+
+// interface LinkProps {
+//   isActive?: boolean;
+//   href: string;
+//   children?: React.ReactNode;
+// }
+
+// export function Link({ isActive, href, children }: LinkProps) {
+//   return (
+//     <StyledLink href={href} isActive={isActive || false}>
+//       {children}
+//     </StyledLink>
+//   );
+// }
+
+import { Link as RouterLink } from 'react-router-dom'; // Renomeando para evitar conflito de nomes
 
 interface LinkProps {
   isActive?: boolean;
@@ -6,10 +22,10 @@ interface LinkProps {
   children?: React.ReactNode;
 }
 
-export function Links({ isActive, to, children }: LinkProps) {
+export function Links({  to, children }: LinkProps) {
   return (
-    <StyledLink href={to} isActive={isActive || false}>
+    <RouterLink to={to} >
       {children}
-    </StyledLink>
+    </RouterLink>
   );
 }

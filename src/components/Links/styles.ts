@@ -1,11 +1,12 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-interface LinkProps {
-    isActive: boolean;
-    href: string;
-    children: React.ReactNode;
-  }
+// interface LinkProps {
+//     isActive: boolean;
+//     href: string;
+//     children: React.ReactNode;
+//   }
 
-export const StyledLink = styled.a<LinkProps>`
-  color: ${props => (props.isActive ? 'blue' : 'inherit')};
-`;
+// export const Li = styled.a<LinkProps>`
+//   color: ${props => (props.isActive ? 'blue' : 'inherit')};
+// `;
+

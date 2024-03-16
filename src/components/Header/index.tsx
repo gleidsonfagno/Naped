@@ -18,7 +18,7 @@ export function Header( ) {
 
                 <Nav>
                     <ul>
-                        <li><Links isActive to="/">Inicio</Links></li>
+                        <li><Links to="/" >Inicio</Links></li>
                         <li><Links to="/series">Séries</Links></li>
                         <li><Links to="/filmes">Filmes</Links></li>
                         <li><Links to="/animes">Animes</Links></li>

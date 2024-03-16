@@ -31,7 +31,7 @@ export const Span = styled.span`
     }
 `
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<{ isActive?: boolean }>`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +43,13 @@ export const Nav = styled.nav`
         
         li{
             list-style-type: none;
+            
+            a {
+                color: ${props => props.theme.WHITE};
+                &:hover{
+                    color: ${props => props.theme.BUTTOM};
+                }
+            }
         }
     }
         
