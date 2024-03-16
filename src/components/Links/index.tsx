@@ -6,7 +6,7 @@ interface LinkProps {
   children?: React.ReactNode;
 }
 
-export function Link({ isActive, to, children }: LinkProps) {
+export function Links({ isActive, to, children }: LinkProps) {
   return (
     <StyledLink href={to} isActive={isActive || false}>
       {children}
