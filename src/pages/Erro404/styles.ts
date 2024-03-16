@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-    max-width: 1128px;
+    max-width: 1168px;
     margin: auto ;
     display: flex;
     align-items: center;

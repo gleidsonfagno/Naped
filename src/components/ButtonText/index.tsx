@@ -3,10 +3,10 @@ import { Button } from "./styles";
 
 interface ButtonTextProps {
     title: string;
-    to: string
+    to?: string
 }
 
-export function ButtonText({title, to} : ButtonTextProps) {
+export function ButtonText({title, to = "/", } : ButtonTextProps) {
     return(
         <Link to={to}>
             <Button>

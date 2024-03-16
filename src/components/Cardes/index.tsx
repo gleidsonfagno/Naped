@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Content } from "./styles";
 
 interface Destaque {
@@ -19,7 +20,8 @@ export function Cardes( {destaque}: CardesProps) {
                 <span> {destaque.category} </span>
                 <h2> {destaque.description}  </h2>
                 <p> {destaque.title} </p>
-                <a href="">Ler mais</a>
+                {/* <a href="">Ler mais</a> */}
+                <Link to={`/detalhe/${destaque.id}`}>Ler mais</Link>
             </div>
         </Content>
     )

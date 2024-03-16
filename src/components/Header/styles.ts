@@ -11,7 +11,7 @@ export const Cabecalho = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    max-width: 1128px;
+    max-width: 1168px;
     margin: 0 auto; 
 `
 

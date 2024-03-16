@@ -1,7 +1,7 @@
 import logoImg from '/assets/Logo_naped.png';
 
 import { ButtonText } from '../ButtonText';
-import { Link } from '../Link';
+import { Link } from '../Links';
 import { Cabecalho, Container, Nav, Span, MenuBar} from './styles';
 
 
@@ -18,11 +18,11 @@ export function Header( ) {
 
                 <Nav>
                     <ul>
-                        <li><Link isActive href="/">Inicio</Link></li>
-                        <li><Link href="#">Séries</Link></li>
-                        <li><Link href="#">Filmes</Link></li>
-                        <li><Link href="#">Animes</Link></li>
-                        <li><Link href="#">Jogos</Link></li>
+                        <li><Link isActive to="/">Inicio</Link></li>
+                        <li><Link to="/series">Séries</Link></li>
+                        <li><Link to="/filmes">Filmes</Link></li>
+                        <li><Link to="/animes">Animes</Link></li>
+                        <li><Link to="/jogos">Jogos</Link></li>
                     </ul>
                 <ButtonText title="Minha conta" to="/register" />
                 </Nav>
