@@ -21,7 +21,7 @@ export function Cardes( {destaque}: CardesProps) {
                 <h2> {destaque.description}  </h2>
                 <p> {destaque.title} </p>
                 {/* <a href="">Ler mais</a> */}
-                <Link to={`/detalhe/${destaque.id}`}>Ler mais</Link>
+                <Link to={`/detalhe/1`}>Ler mais</Link>
             </div>
         </Content>
     )
