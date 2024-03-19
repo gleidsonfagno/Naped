@@ -5,7 +5,7 @@ import { Form, Content } from "./styles";
 import { ButtonText } from "../../components/ButtonText";
 import { Header } from "../../components/Header";
 
-
+import { Link } from "react-router-dom";
 
 export function Signin() {
     return (
@@ -35,7 +35,7 @@ export function Signin() {
                     <ButtonText title="Logar na conta" to="/register" />
                 </Form>
 
-                <a href="/register">Criar uma conta</a>
+                <Link to="/register">Criar uma conta</Link>
             </Content>
         </>
     );
