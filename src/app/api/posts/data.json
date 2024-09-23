@@ -1,0 +1,138 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "imageUrl": "/19.png",
+        "category": "Series",
+        "title": "Vikings foi cancelada mas história vai continuar em nova série",
+        "resume": "A hora chegou, e os fãs de Vikings vão se despedir de uma das melhores séries medievais da TV. Hoje, dia 30 de dezembro, chegou pela Netflix a parte final da sexta temporada. E com isso, o desfecho final da atração.",
+        "date": "30 DEZ 2020",
+        "content": "Este é o fim de uma das séries mais bem sucedidas dos últimos anos, produzida pelo History e distribuída aqui no Brasil pela Netflix. Isso porque a série foi cancelada ainda em 2019, pelo History, mas recebeu sinal positivo para um final apropriado com uma sexta temporada completa. Mas mesmo com o seu fim indo ao ar ainda em 2020, os fãs poderão comemorar um fato: o universo de Vikings continuará através de uma nova série derivada. ",
+        "star": "3",
+        "new": "no"
+      },
+      {
+        "id": 2,
+        "imageUrl": "/03.png",
+        "category": "Animes",
+        "title": "30 antes dos 30: Sen to Chihiro no Kamikakushi",
+        "resume": "Está entre os melhores filmes de animação de sempre e tem o recorde de bilheteira aquando da sua estreia no Japão: Sen to Chihiro no Kamikakushi, de 2001, é possivelmente a obra-prima de Hayao Miyazaki.",
+        "date": "09 NOV 2018",
+        "content": "Está entre os melhores filmes de animação de sempre e tem o recorde de bilheteira aquando da sua estreia no Japão: Sen to Chihiro no Kamikakushi, de 2001, é possivelmente a obra-prima de Hayao Miyazaki.",
+        "star": "5",
+        "new": "no"
+      },
+      {
+        "id": 3,
+        "imageUrl": "/21.png",
+        "category": "Animes",
+        "title": "Kimetsu no Yaiba revela as capas dos seus próximos Volumes Blu-ray/DVD",
+        "resume": "O twitter oficial da adaptação para série anime do mangá Kimetsu no Yaiba (Demon Slayer) de Koyoharu Gotouge revelou as capas dos próximos volumes Blu-ray/DVD que vão ser lançados no Japão.",
+        "date": "19 SET 2022",
+        "content": "O twitter oficial da adaptação para série anime do mangá Kimetsu no Yaiba (Demon Slayer) de Koyoharu Gotouge revelou as capas dos próximos volumes Blu-ray/DVD que vão ser lançados no Japão.",
+        "star": "5",
+        "new": "no"
+      },
+      {
+        "id": 4,
+        "imageUrl": "/11.png",
+        "category": "Jogos",
+        "title": "Diretor de God of War dá resposta para quem afirma que jogos single-player estão morrendo",
+        "resume": "Tem sido muito comum nos últimos anos ouvir que a indústria de games single-player está morrendo. Bem, se isso é verdade então os single player são verdadeiras aves fênix, de acordo com Cory Barlog, diretor de God of War.",
+        "date": "11 JUN 2018",
+        "content": "Tem sido muito comum nos últimos anos ouvir que a indústria de games single-player está morrendo. Bem, se isso é verdade então os single player são verdadeiras aves fênix, de acordo com Cory Barlog, diretor de God of War.",
+        "star": "5",
+        "new": "no"
+      },
+      {
+        "id": 5,
+        "imageUrl": "/06.png", 
+        "category": "Filmes",
+        "title": "A Rede Social: A criação do Facebook",
+        "resume": "A Rede Social é um filme que retrata a fundação do Facebook e os conflitos pessoais e legais que surgiram durante sua ascensão.",
+        "date": "15 NOV 2021",
+        "content": "Dirigido por David Fincher, 'A Rede Social' conta a história de Mark Zuckerberg, um estudante de Harvard que, após criar o Facebook, se vê envolvido em uma série de batalhas legais. O filme explora temas como ambição, amizade e traição, oferecendo uma visão intrigante sobre a vida e as motivações do criador da rede social mais influente do mundo.",
+        "star": "4",
+        "new": "no"
+      },
+      {
+        "id": 6,
+        "imageUrl": "/08.png",
+        "category": "Animes",
+        "title": "Dragon Ball: 13 personagens mais fortes do anime",
+        "resume": "Dragon Ball é conhecido por ser um anime que fez parte da infância de muitas pessoas e causou empolgação no público por suas batalhas eletrizantes, além de ter personagens incríveis e muito poderosos.",
+        "date": "1 JAN 2022",
+        "content": "Dragon Ball é conhecido por ser um anime que fez parte da infância de muitas pessoas e causou empolgação no público por suas batalhas eletrizantes, além de ter personagens incríveis e muito poderosos.",
+        "star": "4",
+        "new": "yes"
+      },
+      {
+        "id": 7,
+        "imageUrl": "/22.jpg",
+        "category": "Jogos",
+        "title": "Assassin's Creed Valhalla: Guia completo",
+        "resume": "Assassin's Creed Valhalla leva a franquia Assassin's Creed para o Século IX, nos países nórdicos. Os jogadores controlam um guerreiro viking que embarca das terras congeladas da Noruega para atacar as costas da Inglaterra e também iniciar um novo assentamento.",
+        "date": "1 JAN 2021",
+        "content": "Assassin's Creed Valhalla leva a franquia Assassin's Creed para o Século IX, nos países nórdicos. Os jogadores controlam um guerreiro viking que embarca das terras congeladas da Noruega para atacar as costas da Inglaterra e também iniciar um novo assentamento.",
+        "star": "4",
+        "new": "yes"
+      },
+      {
+        "id": 8,
+        "imageUrl": "/18.png",
+        "category": "Animes",
+        "title": "15 curiosidades da animação Meu Amigo Totoro que você não sabia",
+        "resume": "A animação conta a história de duas irmãs, Mei e Satsuki, que se mudam para uma casa na zona rural com seu pai Tatsuo. Sua mãe, Yusuko, está internada no hospital. Perto da nova casa conhecem os espíritos da floresta e seu líder, Totoro.",
+        "date": "11 NOV 2022",
+        "content": "A animação conta a história de duas irmãs, Mei e Satsuki, que se mudam para uma casa na zona rural com seu pai Tatsuo. Sua mãe, Yusuko, está internada no hospital. Perto da nova casa conhecem os espíritos da floresta e seu líder, Totoro.",
+        "star": "4",
+        "new": "yes"
+      },
+      {
+        "id": 9,
+        "imageUrl": "/02.png", 
+        "category": "Series",
+        "title": "Curiosidades sobre The Walking Dead",
+        "resume": "The Walking Dead é uma série que acompanha um grupo de sobreviventes em meio a um apocalipse zumbi, enquanto lutam contra mortos-vivos e outros humanos perigosos.",
+        "date": "15 OUT 2022",
+        "content": "The Walking Dead é uma série pós-apocalíptica que explora a luta pela sobrevivência em um mundo dominado por zumbis. Além da ameaça constante dos mortos-vivos, os personagens enfrentam desafios sociais, psicológicos e morais.",
+        "star": "5",
+        "new": "no"
+      },
+      {
+        "id": 10,
+        "imageUrl": "/10.png",
+        "category": "Jogos",
+        "title": "Grand Theft Auto (GTA): A franquia mais polêmica dos videogames",
+        "resume": "GTA é uma série de jogos de ação e aventura que permite aos jogadores explorar grandes cidades e participar de atividades ilegais, com uma narrativa envolvente e polêmica.",
+        "date": "20 DEZ 2022",
+        "content": "A franquia Grand Theft Auto (GTA) revolucionou os jogos de mundo aberto, proporcionando liberdade ao jogador para explorar grandes cidades e realizar missões variadas. Com sua temática polêmica e ação intensa, GTA é uma das franquias mais influentes da história dos videogames.",
+        "star": "5",
+        "new": "yes"
+      },
+      {
+        "id": 11,
+        "imageUrl": "/05.png",
+        "category": "Filmes",
+        "title": "Curiosidades sobre Harry Potter",
+        "resume": "Harry Potter é uma série de filmes baseada nos livros de J.K. Rowling, seguindo a jornada de um jovem bruxo em Hogwarts.",
+        "date": "30 JUL 2022",
+        "content": "A série Harry Potter, que começou com 'Harry Potter e a Pedra Filosofal', capturou a imaginação de milhões ao redor do mundo. Com temas de amizade, coragem e o eterno conflito entre o bem e o mal, os filmes exploram a vida de Harry e seus amigos enquanto enfrentam desafios mágicos e emocionais.",
+        "star": "5",
+        "new": "yes"
+      },
+      {
+        "id": 13,
+        "imageUrl": "/01.png",
+        "category": "Animes",
+        "title": "Curiosidades sobre Shingeki no Kyojin",
+        "resume": "Shingeki no Kyojin é uma série de anime que retrata a luta da humanidade contra titãs gigantes.",
+        "date": "20 JAN 2023",
+        "content": "Shingeki no Kyojin, também conhecido como Attack on Titan, é uma obra que se tornou um fenômeno mundial. A história gira em torno de Eren Yeager e seus amigos enquanto eles lutam para proteger a humanidade dos titãs, seres enormes que devoram humanos. Com temas de liberdade, sacrifício e moralidade, o anime explora a complexidade dos personagens e suas motivações.",
+        "star": "5",
+        "new": "yes"
+      }
+
+    ]
+  }
+  
