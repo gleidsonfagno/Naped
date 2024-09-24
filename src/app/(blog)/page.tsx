@@ -3,6 +3,12 @@
 import Link from "next/link";
 import { Post } from "../types/post";
 
+export const metadata = {
+  title: 'Naped | Blog',
+  description: 'Blog naped para Fans',
+};
+
+
 export const revalidate = 60;
 
 export default async function Home({}) {
