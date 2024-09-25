@@ -2,19 +2,16 @@
 
 import Image from "next/image";
 import { Container } from "./styles";
-import type { Post } from "@/data/types/post";
+
 import { useEffect, useState } from "react";
 import { SectionCard } from "../../styles";
 import { Recentes } from "@/components/Posts/Recentes";;
 import NotFound from "@/app/not-found";
+import { Post } from "@/app/types/post";
 
 // Função para buscar o post específico pelo id
 async function getPostsid(id: number): Promise<Post | undefined> {
   const response = await fetch("http://localhost:3000/api/posts", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
   });
   const posts: Post[] = await response.json();
   const post = posts.find((postid: Post) => postid.id === id);
@@ -24,10 +21,6 @@ async function getPostsid(id: number): Promise<Post | undefined> {
 // Função para buscar posts relacionados pela categoria
 async function getPostRelacionados(category: string): Promise<Post[]> {
   const response = await fetch("http://localhost:3000/api/posts", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
   });
   const posts: Post[] = await response.json();
 
