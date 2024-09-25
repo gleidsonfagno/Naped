@@ -1,36 +1,95 @@
-// import Image from "next/image";
+"use client";
 
-import { Post } from "@/app/types/post";
-import { notFound } from "next/navigation";
+import Image from "next/image";
+import { Container } from "./styles";
+import type { Post } from "@/data/types/post";
+import { useEffect, useState } from "react";
+import { SectionCard } from "../../styles";
+import { Recentes } from "@/components/Posts/Recentes";;
+import NotFound from "@/app/not-found";
 
-// funçao que pega o id do post
-async function getPost(id: string): Promise<Post | null> {
-  try {
-    const data = await fetch(`https://naped-red.vercel.app/api/posts/${id}`);
-    if (!data.ok) {
-      notFound();
-    }
-    const postId: Post = await data.json();
-    if (!postId) notFound();
-    return postId;
-  } catch (error) {
-    console.error("Error fetching post:", error);
-    throw error;
-  }
+// Função para buscar o post específico pelo id
+async function getPostsid(id: number): Promise<Post | undefined> {
+  const response = await fetch("http://localhost:3000/api/posts", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  const posts: Post[] = await response.json();
+  const post = posts.find((postid: Post) => postid.id === id);
+  return post;
 }
 
-export default async function Home({ params }: { params: { id: string } }) {
-  const post = await getPost(params.id);
-  console.log(post?.title)
+// Função para buscar posts relacionados pela categoria
+async function getPostRelacionados(category: string): Promise<Post[]> {
+  const response = await fetch("http://localhost:3000/api/posts", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  const posts: Post[] = await response.json();
 
-  if(!post) {
-    return <p>Post not_Found</p>
+  // Filtrar os posts pela mesma categoria
+  const postsRelacionados = posts.filter((post) => post.category === category);
+
+  return postsRelacionados;
+}
+
+export default function Posts({ params: { id } }: { params: { id: number } }) {
+  const [post, setPost] = useState<Post | undefined>(undefined);
+  const [postsRelacionados, setPostsRelacionados] = useState<Post[]>([]);
+  
+  useEffect(() => {
+    async function fetchPost() {
+      const fetchedPost = await getPostsid(Number(id));
+      setPost(fetchedPost);
+
+      // Após carregar o post, buscar os relacionados pela categoria
+      if (fetchedPost?.category) {
+        const relacionados = await getPostRelacionados(fetchedPost.category);
+        setPostsRelacionados(relacionados);
+      }
+    }
+    fetchPost();
+  }, [id]);
+
+  if (!post) {
+    return <NotFound />;
   }
-  // console.log(post)
+
   return (
-    <div>
-      <h1>Hello {params.id}</h1>;<h2>{post.title}</h2>
-      <p>{post.category}</p>
-    </div>
+    <>
+      <Container>
+        <span className="category">{post.category}</span>
+        <h2>{post.title}</h2>
+        <p>{post.resume}</p>
+
+        <Image
+          className="imageUrl"
+          src={post.imageUrl}
+          width={700}
+          height={400}
+          alt=""
+        />
+
+        <p>{post.content}</p>
+
+        <article>
+          <SectionCard>
+            <h3>Outras notícias parecidas</h3>
+
+            <div>
+         {postsRelacionados.map((post) => (
+            <Recentes key={post.id} post={post} />
+          ))}
+         </div>
+
+            
+          </SectionCard>
+        </article>
+      </Container>
+    </>
   );
 }
