@@ -1,4 +1,3 @@
-import { inter } from "@/app/layout"
 import styled from "styled-components"
 
 
@@ -25,8 +24,6 @@ export const Container = styled.section`
         padding-top: 16px;
     }
     p{
-        /* font-family: "Inter" sans-serif; */
-        font-family: ${inter.style.fontFamily};
         color: ${props => props.theme.DARCK_20};
         font-size: 24px;
         font-weight: 400;

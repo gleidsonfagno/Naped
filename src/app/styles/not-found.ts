@@ -34,7 +34,7 @@ export const Left = styled.div`
     }
 
     > p {
-        font-family: 'Inter', sans-serif; 
+        /* font-family: 'Inter', sans-serif;  */
         font-size: 24px;
         font-weight: 400;
         line-height: 38.4px;
