@@ -11,8 +11,7 @@ import { Post } from "@/app/types/post";
 
 // Função para buscar o post específico pelo id
 async function getPostsid(id: number): Promise<Post | undefined> {
-  const response = await fetch("http://localhost:3000/api/posts", {
-  });
+  const response = await fetch("http://localhost:3000/api/posts");
   const posts: Post[] = await response.json();
   const post = posts.find((postid: Post) => postid.id === id);
   return post;
@@ -20,8 +19,7 @@ async function getPostsid(id: number): Promise<Post | undefined> {
 
 // Função para buscar posts relacionados pela categoria
 async function getPostRelacionados(category: string): Promise<Post[]> {
-  const response = await fetch("http://localhost:3000/api/posts", {
-  });
+  const response = await fetch("http://localhost:3000/api/posts");
   const posts: Post[] = await response.json();
 
   // Filtrar os posts pela mesma categoria
