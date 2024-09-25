@@ -1,5 +1,5 @@
 'use client';
-// import { ButtonText } from "../ButtonText";
+import { ButtonText } from "../ButtonText";
 
 import { Cabecalho, Container, Nav, Span, MenuBar } from "./styles";
 import Image from "next/image";
@@ -31,29 +31,29 @@ export default function Header() {
           <strong>Naped</strong>
         </Span>
 
-        <Nav menuOpen={menuOpen}>
+        <Nav $menuOpen={menuOpen}>
           <ul className={menuOpen ? "menu-open" : ""}>
             <li>
               <Link href="/">Inicio</Link>
             </li>
             <li>
-              <Link href="/categories/Series">Séries</Link>
+              <Link href="/categories/Series" onClick={toggleMenu} >Séries</Link>
             </li>
             <li>
-              <Link href="/categories/Filmes">Filmes</Link>
+              <Link href="/categories/Filmes" onClick={toggleMenu}>Filmes</Link>
             </li>
             <li>
-              <Link href="/categories/Animes">Animes</Link>
+              <Link href="/categories/Animes" onClick={toggleMenu}>Animes</Link>
             </li>
             <li>
-              <Link href="/categories/Jogos">Jogos</Link>
+              <Link href="/categories/Jogos" onClick={toggleMenu}>Jogos</Link>
             </li>
             <li>
               <MenuBar className="open_menu" onClick={toggleMenu}>
                 {menuOpen ? <RiCloseLine /> : <RiMenuLine />}
               </MenuBar>
             </li>
-            {/* <ButtonText title="Minha conta" to="/Signin" /> */}
+            <ButtonText title="Minha conta" to="/Signin" />
           </ul>
         </Nav>
 

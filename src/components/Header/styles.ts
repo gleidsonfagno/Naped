@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 interface menuProps {
-    menuOpen: boolean
+    $menuOpen: boolean
 }
 
 export const Container = styled.div`
@@ -70,14 +70,13 @@ export const Nav = styled.nav<menuProps>`
       flex-direction: column;
       top: 0;
       z-index: 3;
-      left: ${(props) =>
-        props.menuOpen ? "0" : "-100%"}; /* Deslizar da esquerda */
-      /* right: 0; */
+      left: ${(props) => (props.$menuOpen ? "0" : "-100%")}; /* Deslizar da esquerda */
+  transition: left 0.3s ease; /* Para um efeito suave */
       bottom: 0;
       align-items: center;
       text-align: center;
       padding-top: 40px;
-      width: 50%;
+      width: 100%;
       height: 100%;
 
       background-color: ${(props) => props.theme.DARCK_80};

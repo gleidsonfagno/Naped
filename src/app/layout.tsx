@@ -6,6 +6,7 @@ import StyledComponentsRegistry from "./lib/registry";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./types/themes/default";
 import { Globalstyle } from './types/global';
+import { Footer } from "@/components/Footer";
 
 
 export default function RootLayout({
@@ -25,6 +26,7 @@ export default function RootLayout({
             <Header />
            
             {children}
+            <Footer />
           </ThemeProvider>
         </StyledComponentsRegistry>
       </body>
